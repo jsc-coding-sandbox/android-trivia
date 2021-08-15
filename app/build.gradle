@@ -27,6 +27,12 @@ android {
     buildFeatures {
         dataBinding true
     }
+    compileOptions {
+        // These two lines are now required to target Java 8 or else we get an error
+        // "invoke-customs are only supported starting with Android O" when building.
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
     defaultConfig {
         applicationId 'com.example.android.navigation'
         minSdkVersion 19
