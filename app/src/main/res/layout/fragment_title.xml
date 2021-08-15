@@ -26,12 +26,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <fragment
-            android:id="@+id/titleFragment"
-            android:name="com.example.android.navigation.TitleFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
         <Button
             android:id="@+id/playButton"
             android:layout_width="wrap_content"
